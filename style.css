@@ -406,9 +406,11 @@ section {
 }
 
 .email-icon {
-    height: 25px;
+    height: 30px;
 }
-
+.twitter-icon {
+    height: 23px;
+}
 
 /* FOOTER SECTION */
 
