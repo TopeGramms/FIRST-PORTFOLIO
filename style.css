@@ -23,7 +23,7 @@ p {
 /*TRANSITION*/
 
 a, .btn {
-    transition: all 300ms ease;
+    transition: all 400ms ease;
 }
 
 /*DESTOP NAV*/
@@ -92,7 +92,8 @@ a:hover {
 }
 
 .menu-links {
-    position: absolute;
+    display: block;
+    /* position: block; */
     top: 100%;
     right: 0%;
     background-color: white;
@@ -105,7 +106,7 @@ a:hover {
 .menu-links a {
     display: block;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
