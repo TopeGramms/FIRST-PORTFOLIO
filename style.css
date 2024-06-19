@@ -79,7 +79,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 24px;
+    height: 25px;
     width: 30px;
     cursor: pointer;
 }
@@ -93,14 +93,15 @@ a:hover {
 
 .menu-links {
     display: block;
-    /* position: block; */
+    position: absolute;
     top: 100%;
     right: 0%;
-    background-color: white;
+    background-color: darkcyan;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all, 0.3 ease-in-out;
+    border-radius: 1.5rem;
 }
 
 .menu-links a {
@@ -108,7 +109,7 @@ a:hover {
     padding: 10px;
     text-align: left;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all, 0.3 ease-in-out;
 }
@@ -169,6 +170,7 @@ section {
 
 .section__pic-container {
     display: flex;
+    justify-content: space-around;
 }
 
 .section__text {
