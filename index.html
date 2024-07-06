@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="mediaquery.css">
 </head>
     <body>
+        <div id="loader" class="loader"></div>
+    <div id="content" class="content">
         <nav id="desktop-nav">
             <div class="logo">TopeGramms</div>
             <div>
@@ -45,7 +47,7 @@
                 <h2 class="title">Tope Gramms</h2>
                 <p class="section__text__p2">Frontend Developer</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2"
+                    <button class="btn btn-color-1"
                     onclick="window.open('./assets/resume-example.pdf')">My CV</button>
                     <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contact Info</button>
                 </div>
@@ -294,9 +296,17 @@
             />
         </section>
         <section id="contacts">
-            <p class="section__text__p1">Get In Touch</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="contacts-info-upper-container">
+            <p class="section__text__p1">Got a question or proposal, or just want to say hello? </p>
+            <h1 class="title">Send me a message!</h1>
+            <p>Your Name</p>
+            <input type="text" id="messageInput" placeholder="Enter your name...">
+            <p>Email Address</p>
+            <input type="text" id="messageInput" placeholder="Enter your email address...">
+            <p>Your Message</p>
+            <input type="text" id="messageInput" placeholder="Type your message here...">
+            <button onclick="submitMessages()">Shoot</button>
+            
+            <!-- <div class="contacts-info-upper-container">
                 <div class="contacts-info-container">
                     <img 
                         src="./assets/email.png" 
@@ -305,7 +315,7 @@
                     />
                     <p><a href="mailto:examplemail@gmail.com">Hardekhalu@gmail.com</a></p>
                 </div>
-                <!-- <div class="contacts-info-container">
+                 <div class="contacts-info-container">
                     <img 
                         src="./assets/linkedin.png" 
                         alt="linkedin icon" 
@@ -313,7 +323,7 @@
                     />
                     <p><a href="https://www.linkedin.com/profile">linkedin</a></p>
                 </div> -->
-                <div class="contacts-info-container">
+                <!-- <div class="contacts-info-container">
                     <img 
                         src="./assets/X-Logo.png" 
                         alt="Twitter icon" 
@@ -321,8 +331,8 @@
                     />
                     <p><a href="https://x.com/Topegramms">Twitter</a></p>
                 </div>
-            </div> 
-                <img 
+            </div>  -->
+                <img  
                 src="./assets/arrow.png"
                 alt="arrow-icon" 
                 class="icon arrow"

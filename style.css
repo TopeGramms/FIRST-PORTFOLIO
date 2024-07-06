@@ -9,7 +9,14 @@
 body {
         font-family: "Poppins", sans-serif;
         font-weight: 600;
-        font-style: normal;
+        font-style: normal; 
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
 }
 
 html {
@@ -19,6 +26,28 @@ html {
 p {
     color: rgb(85,85,85);
 }
+
+/* LOADING AMINATION */
+.content {
+    display: none;
+}
+.loader {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background-color: ;
+    animation: spin 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  }
+  
+  @keyframes spin {
+    0%, 100% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(0.5) rotate(180deg);
+    }
+  }
+
 
 /*TRANSITION*/
 
@@ -381,7 +410,35 @@ section {
     height: 70vh;
 }
 
-.contacts-info-upper-container {
+input[type="text"] {
+    width: 300px;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 10px;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* .contacts-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
@@ -413,7 +470,7 @@ section {
 }
 .twitter-icon {
     height: 23px;
-}
+} */
 
 /* FOOTER SECTION */
 
